@@ -1,0 +1,359 @@
+    1  sudo add-apt-repository ppa:openjdk-r/ppa
+    2  sudo apt-get update
+    3  sudo apt-get install -y fontconfig openjdk-17-jre openjdk-17-jdk
+    4  cd /usr/lib/jvm/java-17-openjdk-amd64
+    5  cd /tmp ; sudo wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz
+    6  cd /tmp ; sudo tar -xzf apache-maven-3.9.6-bin.tar.gz -C  /opt/
+    7  cd /opt
+    8  ls -l
+    9  mv /opt/apache-maven-3.9.6 /opt/maven
+   10  sudo su -
+   11  git --version
+   12  java --version
+   13  mvn --version
+   14  mvn -version
+   15  sudo apt install maven
+   16  mvn --version
+   17  history
+   18  sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+   19  exit
+   20  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+   21  sudo apt-get update
+   22  sudo apt-get install jenkins
+   23  ls /
+   24  cd /usr/lib/jvm/java-17-openjdk-amd64/
+   25  ls -l
+   26  cd /opt/maven/
+   27  ls -l
+   28  cd /var/lib/jenkins/
+   29  ls
+   30  cd
+   31  systemctl status jenkins.service
+   32  cat /var/lib/jenkins/secrets/initialAdminPassword
+   33  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+   34  history
+   35  cd /usr/lib/jvm/java-17-openjdk-amd64/
+   36  ls -l
+   37  pwd
+   38  cd /usr/bin/
+   39  ls -l java
+   40  cd /opt/maven/
+   41  ls -l
+   42  pwd
+   43  sudo su - jenkins
+   44  cd /var/lib/jenkins/
+   45  ls -l
+   46  cd ..
+   47  cd /usr/lib/jvm/java-17-openjdk-amd64/
+   48  ls -l
+   49  pwd
+   50  cd
+   51  cd /opt/maven
+   52  ls -l
+   53  pwd
+   54  cd /opt/maven
+   55  cd /var/lib/jenkins
+   56  ls -l
+   57  history
+   58  cd workspace/
+   59  ls -l
+   60  cd mypackage/
+   61  ls -l
+   62  cd target/
+   63  ls -l
+   64  cd ..
+   65  cd .
+   66  cd ..
+   67  cd /var/lib/jenkins/workspace/
+   68  ls -l
+   69  cd 'mypackage codereview'/
+   70  ls -l
+   71  cd target/
+   72  ls -l
+   73  history
+
+ubuntu@jenkins-master:/var/lib/jenkins/workspace/mypackage codereview/target$
+
+—-----------------------------Jenkins Master—-----------------------------------------
+
+ubuntu@jenkins-master:/var/lib/jenkins$ history
+    1  sudo add-apt-repository ppa:openjdk-r/ppa
+    2  sudo apt-get update
+    3  sudo apt-get install -y fontconfig openjdk-17-jre openjdk-17-jdk
+    4  cd /usr/lib/jvm/java-17-openjdk-amd64
+    5  cd /tmp ; sudo wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz
+    6  cd /tmp ; sudo tar -xzf apache-maven-3.9.6-bin.tar.gz -C  /opt/
+    7  cd /opt
+    8  ls -l
+    9  mv /opt/apache-maven-3.9.6 /opt/maven
+   10  sudo su -
+   11  git --version
+   12  java --version
+   13  mvn --version
+   14  mvn -version
+   15  sudo apt install maven
+   16  mvn --version
+   17  history
+   18  sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+   19  exit
+   20  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+   21  sudo apt-get update
+   22  sudo apt-get install jenkins
+   23  ls /
+   24  cd /usr/lib/jvm/java-17-openjdk-amd64/
+   25  ls -l
+   26  cd /opt/maven/
+   27  ls -l
+   28  cd /var/lib/jenkins/
+   29  ls
+   30  cd
+   31  systemctl status jenkins.service
+   32  cat /var/lib/jenkins/secrets/initialAdminPassword
+   33  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+   34  history
+   35  cd /usr/lib/jvm/java-17-openjdk-amd64/
+   36  ls -l
+   37  pwd
+   38  cd /usr/bin/
+   39  ls -l java
+   40  cd /opt/maven/
+   41  ls -l
+   42  pwd
+   43  sudo su - jenkins
+   44  cd /var/lib/jenkins/
+   45  ls -l
+   46  cd ..
+   47  cd /usr/lib/jvm/java-17-openjdk-amd64/
+   48  ls -l
+   49  pwd
+   50  cd
+   51  cd /opt/maven
+   52  ls -l
+   53  pwd
+   54  ls -l
+   55  cd /var/lib/jenkins/
+   56  ls -l
+   57  cd /var/bin/jemkins/
+   58  cd /var/bin/jenkins/
+   59  cd /var/lib/jenkins/
+   60  ls -l
+   61  history
+   62  exit
+   63  ps  -ef|grep jenkins
+   64  cd /var/lib/jenkins/
+   65  jenkins --version
+   66  java --version
+   67  maven version
+   68  mvn --version
+   69  cd /var/lib/jenkins
+   70  clear
+   71  cd /var/lib/jenkins
+   72  ls -l
+   73  cd workspace/
+   74  ls -l
+   75  cd sampleapp.package/
+   76  ls -l
+   77  cd target/
+   78  ls -l
+   79  cd
+   80  ls -l
+   81  cd /var/lib/jenkins
+   82  ls -l
+   83  ls
+   84  cd workspace/
+   85  ls -l
+   86  cd 'app package'
+   87  ls -l
+   88  cd target/
+   89  ls -l
+   90  cd ..
+   91  history
+
+
+
+
+—--------------------------------------------------Jenkins Agent—------------------------------------------------
+
+ubuntu@jenkins-agent:/opt/jagenthome$ history
+    1  hostnamectl set-hostname jenkins-agent
+    2  sudo hostnamectl set-hostname jenkins-agent
+    3  exit
+    4  git --version
+    5  java -version
+    6  java --version
+    7  sudo add-apt-repository ppa:openjdk-r/ppa
+    8  sudo apt-get update
+    9  sudo apt-get install -y fontconfig openjdk-17-jre openjdk-17-jdk
+   10  java --version
+   11  mvn --version
+   12  cd /tmp ; sudo wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz
+   13  cd /tmp ; sudo tar -xzf apache-maven-3.9.6-bin.tar.gz -C  /opt/
+   14  cd /opt
+   15  ls -l
+   16  cd maven
+   17  sudo su -
+   18  clear
+   19  git --version
+   20  java --version
+   21  mvn --version
+   22  cd /var/lib/jenkins/
+   23  cd /var/lib/jenkins
+   24  cd var/lib/jenkins
+   25  jenkins --version
+   26  cd /var/lib/jenkins
+   27  sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+   28  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+   29  sudo apt-get update
+   30  sudo apt-get install jenkins
+   31  ls /
+   32  cd /usr/lib/jvm/java-17-openjdk-amd64/
+   33  ls -l
+   34  cd /opt/maven/
+   35  ls -l
+   36  cd /var/lib/jenkins/
+   37  jenkins --version
+   38  ls -l
+   39  cd /var/lib/jenkins/
+   40  ls -l
+   41  cd
+   42  ls /
+   43  cd opt
+   44  cd /opt
+   45  ls -l
+   46  mkdir jagenthome
+   47  sudo mkdir jagenthome
+   48  cd jagenthome
+   49  ls -l
+   50  pwd
+   51  clear
+   52  cd /opt/jagenthome/
+   53  curl -sO http://3.76.222.231:8080/jnlpJars/agent.jar
+   54  ls -l
+   55  curl -sO http://10.0.0.19:8080/jnlpJars/agent.jar
+   56  java -jar agent.jar -url http://10.0.0.19:8080/ -secret ab1a935ce4799a9c5e585fc733e5ea5f6c6a305c50b28f689e52d583e7f9dcf7 -name "agent-jenkins-java-project" -workDir "/opt/jagenthome"
+   57  ls -l
+   58  cd ..
+   59  ls -l
+   60  cd jagenthome/
+   61  curl -sO http://3.76.222.231:8080/jnlpJars/agent.jar
+   62  ls -l
+   63  java -jar agent.jar -url http://3.76.222.231:8080/ -secret ab1a935ce4799a9c5e585fc733e5ea5f6c6a305c50b28f689e52d583e7f9dcf7 -name "agent-jenkins-java-project" -workDir "/opt/jagenthome"
+   64  ls -l
+   65  cd /opt/jagenthome/
+   66  curl -sO http://10.0.0.19:8080/jnlpJars/agent.jar
+   67  java -jar agent.jar -url http://10.0.0.19:8080/ -secret ab1a935ce4799a9c5e585fc733e5ea5f6c6a305c50b28f689e52d583e7f9dcf7 -name "agent-jenkins-java-project" -workDir "/opt/jagenthome"
+   68  ls -l
+   69  java -jar agent.jar -url http://10.0.0.19:8080/ -secret ab1a935ce4799a9c5e585fc733e5ea5f6c6a305c50b28f689e52d583e7f9dcf7 -name "agent-jenkins-java-project" -workDir "/opt/jagenthome"
+   70  curl -sO http://10.0.0.19:8080/jnlpJars/agent.jar
+   71  ls -l
+   72  curl -sO http://10.0.0.19:8080/jnlpJars/agent.jar
+   73  ls -l
+   74  clear
+   75  cd /opt/jagenthome
+   76  ls -l
+   77  curl -sO http://10.0.0.19:8080/jnlpJars/agent.jar
+   78  java -jar agent.jar -url http://10.0.0.19:8080/ -secret ab1a935ce4799a9c5e585fc733e5ea5f6c6a305c50b28f689e52d583e7f9dcf7 -name "agent-jenkins-java-project" -workDir "/opt/jagenthome"
+   79  ls -l
+   80  clear
+   81  cd /opt/jagenthome
+   82  curl -sO http://10.0.0.19:8080/jnlpJars/agent.jar
+   83  ls -l
+   84  curl -sO http://10.0.0.19:8080/jnlpJars/agent.jar
+   85  ls -l
+   86  ping 10.0.0.19
+   87  curl -sO http://10.0.0.19:8080/jnlpJars/agent.jar
+   88  ls -l
+   89  curl -sO http://18.192.126.164:8080/jnlpJars/agent.jar
+   90  ls -l
+   91  curl -sO http://18.192.126.164:8080/jnlpJars/agent.jar
+   92  ls -l
+   93  cp /tmp/agent.jar .
+   94  sudo cp /tmp/agent.jar .
+   95  ls
+   96  clear
+   97  cd /opt/jagenthome
+   98  ls -l
+   99  java -jar agent.jar -url http://10.0.0.19:8080/ -secret ab1a935ce4799a9c5e585fc733e5ea5f6c6a305c50b28f689e52d583e7f9dcf7 -name "agent-jenkins-java-project" -workDir "/opt/jagenthome"
+  100  ls -l
+  101  ps -ef|grep java
+  102  cd workspace
+  103  ls -l
+  104* java -jar agent.jar -url http://10.0.0.19:8080/ -secret ab1a935ce4799a9c5e585fc733e5ea5f6c6a305c50b28f689e52d583e7f9dcf7 -name "agent-jenkins-java-project" -workDir "/opt/jagenthome" &
+  105* java -jar agent.jar -url http://10.0.0.19:8080/ -secret ab1a935ce4799a9c5e585fc733e5ea5f6c6a305c50b28f689e52d583e7f9dcf7 -name "agent-jenkins-java-project" -workDir "/opt/jagenthome" &
+  106  curl -sO http://10.0.0.19:8080/jnlpJars/agent.jar
+  107  ls -l
+  108  java -jar agent.jar -url http://10.0.0.19:8080/ -secret ab1a935ce4799a9c5e585fc733e5ea5f6c6a305c50b28f689e52d583e7f9dcf7 -name "agent-jenkins-java-project" -workDir "/opt/jagenthome"
+  109  java -jar agent.jar -url http://18.199.90.201:8080/ -secret ab1a935ce4799a9c5e585fc733e5ea5f6c6a305c50b28f689e52d583e7f9dcf7 -name "agent-jenkins-java-project" -workDir "/opt/jagenthome"
+  110  java -jar agent.jar -url http://10.0.0.19:8080/ -secret ab1a935ce4799a9c5e585fc733e5ea5f6c6a305c50b28f689e52d583e7f9dcf7 -name "agent-jenkins-java-project" -workDir "/opt/jagenthome" &
+  111  ls -ld /opt/jagenthome
+  112  sudo chmod 755 /opt/jagenthome
+  113  java -jar agent.jar -url http://10.0.0.19:8080/ -secret ab1a935ce4799a9c5e585fc733e5ea5f6c6a305c50b28f689e52d583e7f9dcf7 -name "agent-jenkins-java-project" -workDir "/opt/jagenthome" &
+  114  sudo java -jar agent.jar -url http://10.0.0.19:8080/ -secret ab1a935ce4799a9c5e585fc733e5ea5f6c6a305c50b28f689e52d583e7f9dcf7 -name "agent-jenkins-java-project" -workDir "/opt/jagenthome" &
+  115  ls -l
+  116  cd workspace/
+  117  ls -l
+  118  cd workspace/
+  119  cd ..
+  120  ls -l
+  121  cd remoting/
+  122  ls -l
+  123  cd logs
+  124  ls -l
+  125  cd ..
+  126  cd workspace/
+  127  ls -l
+  128  cd ..
+  129  history
+
+—--------------------- qa server( deploy package into application on tomcat server—-------------------
+
+ubuntu@qa-server:~/apache-tomcat-9.0.91/bin$ history
+    1  yes
+    2  clear
+    3  java -version
+    4  add-apt-repository ppa:openjdk-r/ppa
+    5  sudo add-apt-repository ppa:openjdk-r/ppa
+    6  apt-get update
+    7  apt-get install -y fontconfig openjdk-17-jre openjdk-17-jdk
+    8  sudo apt-get update
+    9  sudo apt-get install -y fontconfig openjdk-17-jre openjdk-17-jdk
+   10  java -version
+   11  wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.91/bin/apache-tomcat-9.0.91.tar.gz
+   12  ls -
+   13  ls -l
+   14  ls -ltrh
+   15  tar -xzf apache-tomcat-9.0.91.tar.gz
+   16  ls -l
+   17  rm -r apache-tomcat-9.0.91.tar.gz
+   18  ls -l
+   19  cd apache-tomcat-9.0.91/
+   20  ls -l
+   21  cd bin/
+   22  ls -l
+   23  ./startup.sh
+   24  ps -ef|grep tomcat
+   25  cd ..
+   26  ls -l
+   27  cd conf/
+   28  ls -l
+   29  cd ..
+   30  ls -l
+   31  cd webapps/
+   32  ls -l
+   33  cd .
+   34  cd /root/apache-tomcat-9.0.91/webapps/
+   35  sudo cd /root/apache-tomcat-9.0.91/webapps/
+   36  cd ..
+   37  ls -l
+   38  cd webapps/
+   39  wget https://github.com/lerndevops/code/raw/main/sampleapp.war
+   40  ls -l
+   41  cd ..
+   42  ls -l
+   43  cd bin/
+   44  ls
+   45  ./shutdown.sh
+   46  ps -ef|grep tomcat
+   47  ./startup.sh
+   48  history
+
